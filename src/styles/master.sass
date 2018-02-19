@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300')
+@import './bootstrap/customizations.scss'
+
+html
+  box-sizing: border-box
+  margin: none
+  padding: none
+
+h1, h2, h3, h4, h5, h6, p, div
+  font-family: 'Roboto', sans-serif
+
+button
+  &.btn, &.btn-primary
+    &:active, &:visited, &:focus, &[type="submit"], &:active:focus
+      border: none
+      outline: none
+
+body
+  min-height: 100vh
+  min-width: 100vw
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  background: #ECEBEC
+  // background: linear-gradient(to right, #c2e59c, #64b3f4)
+  // background: linear-gradient(to right, #eef2f3, #8e9eab)
+
+  .container
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    form
+      margin: 20px 0
+      input
+        margin-right: 20px
+      button[type="submit"]
+
+    .row.table-container
+      background: white
+      padding: 20px
+      border-radius: 3px
+
+      table.table
+        min-width: 400px
+
+      button.btn-default.clear-list
+        float: right
+
+      button.close
+        float: left
+        &:active, &:visited, &:focus, &:hover
+          border: none
+
+    #alert-empty
